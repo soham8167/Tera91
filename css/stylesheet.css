@@ -1,0 +1,104 @@
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Gilroy";
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Bold.eot");
+  src:
+    url("../fonts/Gilroy-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Gilroy-Bold.woff2") format("woff2"),
+    url("../fonts/Gilroy-Bold.woff") format("woff"),
+    url("../fonts/Gilroy-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Heavy.eot");
+  src:
+    url("../fonts/Gilroy-Heavy.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Gilroy-Heavy.woff2") format("woff2"),
+    url("../fonts/Gilroy-Heavy.woff") format("woff"),
+    url("../fonts/Gilroy-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+.gilroy-heavy {
+  font-family: "Gilroy";
+  font-weight: 900;
+}
+.gilroy-bold {
+  font-family: "Gilroy";
+  font-weight: bold;
+}
+
+ /* BASE DESKTOP STYLES (Keep your logic) */
+.service-box {
+  position: relative;
+}
+
+.service-box::before,
+.service-box::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* DESKTOP VIEW */
+@media (min-width: 768px) {
+  .service-box::before {
+    left: 80px;
+    bottom: 20px;
+    width: 280px;
+    height: 230px;
+    background-image: url("../images/cut.png");
+  }
+
+  .service-box::after {
+    right: 80px;
+    bottom: 20px;
+    width: 250px;
+    height: 230px;
+    background-image: url("../images/centralised.png");
+  }
+}
+
+/* MOBILE VIEW */
+@media (max-width: 767px) {
+  .service-box {
+    background: transparent !important; 
+    box-shadow: none !important;
+  }
+
+  .service-box::before {
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 280px;
+    height: 230px;
+    background-image: url("../images/cut.png");
+  }
+
+  .service-box::after {
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 280px; /* Match width for consistency on mobile */
+    height: 230px;
+    background-image: url("../images/centralised.png");
+  }
+}

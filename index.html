@@ -3,24 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/stylesheet.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-<style>
-@font-face {
-  font-family: 'Gilroy';
-  src: url('./fonts/Gilroy-Heavy.woff2') format('woff2'),
-       url('./fonts/Gilroy-Heavy.woff') format('woff');
-  font-weight: 900; /* Heavy = 900 */
-  font-style: normal;
-}
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: 'Gilroy', sans-serif;
-}
-</style>
+    
     <title>Terra91</title>
+   
   </head>
   <body>
     <header class="w-full bg-[#263D8D] ">
@@ -37,217 +24,180 @@ body {
     </header>
 
     <!-- section 1 -->
-    <section
-      class="relative bg-gradient-to-r from-[#253D90] to-black overflow-hidden "
-    >
-      <div class="absolute inset-0 ">
-        <img
-          src="images/hero-bg.png"
-          class="w-full h-full object-cover opacity-50 mt-[-120px]"
-        />
-      </div>    
-
-      <!-- Content -->
-      <div class="relative max-w-7xl mx-auto px-6 py-16 lg:py-24 grid lg:grid-cols-2 gap-10 items-center mt-[-80px]">
-        <div>
-          <p class="text-[#CCD54D] text-[20px] font-bold mb-4">
-            PRECISION CUT & BEND REBAR
-          </p>
-
-          <div class="flex  gap-3 mb-3">
-            <span class="bg-[#5A6BAA] text-white text-xs px-2 py-2 rounded">
-              Fast quote turnaround
-            </span>
-
-            <span class="bg-[#5A6BAA] text-white text-xs px-2 py-2 rounded">
-              Centralised BBS support
-            </span>
-
-            <span class="bg-[#5A6BAA] text-white text-xs px-2 py-2 rounded">
-              Ready-to-site delivery
-            </span>
-          </div>
-
-          <h1 class="text-[#FFFFFF] text-4xl md:text-5xl font-bold leading-tight mb-6">
-            CUT COSTS,<br />
-            NOT CORNERS.
-          </h1>
-          <div class="relative">
-  <img 
-    src="images/section1-horizontal.png" 
-    class="w-[122%] max-w-none"
-  />
-</div>
-        </br>
-          <p class="text-[#FFFFFF] mb-8 max-w-[1080px] leading-none">
-            Precision cut & bend rebar solutions that reduce wastage, lower
-            labour costs, and keep your project on track.
-          </p>
-
-         <div class="flex flex-col gap-4 lg:flex-row lg:gap-6">
-
-  <!-- Column 1 -->
-  <div class="flex gap-4 lg:flex-col">
-    <div class="w-[48%] lg:w-[175px] h-[78px] bg-[#2B4189] p-4 rounded flex flex-col justify-center">
-      <h3 class="text-[20px] font-bold text-[#CCD54D]">10%</h3>
-      <p class="text-[12px] text-white mt-1">Potential cost savings</p>
-    </div>
-
-    <div class="w-[48%] lg:w-[175px] h-[98px] bg-[#2B4189] p-4 rounded flex flex-col justify-start">
-      <img src="images/image-4.png" class="w-8 h-8 mb-3" />
-      <p class="text-[13px] text-white font-medium">
-        Cut Costs by up to 10%
-      </p>
-      
-    </div>
-   
-  </div>
-
-  <!-- Column 2 -->
-  <div class="flex gap-4 lg:flex-col">
-    <div class="w-[48%] lg:w-[175px] h-[78px] bg-[#2B4189] p-4 rounded flex flex-col justify-center">
-      <h3 class="text-[20px] font-bold text-[#CCD54D]">15%</h3>
-      <p class="text-[12px] text-white mt-1">Lower material wastage</p>
-    </div>
-
-    <div class="w-[48%] lg:w-[175px] h-[98px] bg-[#2B4189] p-4 rounded flex flex-col justify-start">
-      <img src="images/image-5.png" class="w-8 h-8 mb-3" />
-      <p class="text-[13px] text-white font-medium">
-        Lower Material Wastage by 15%
-      </p>
-    </div>
-  </div>
-
-  <!-- Column 3 -->
-  <div class="flex gap-4 lg:flex-col">
-    <div class="w-[48%] lg:w-[175px] h-[78px] bg-[#2B4189] p-4 rounded flex flex-col justify-center">
-      <h3 class="text-[20px] font-bold text-[#CCD54D]">FASTER</h3>
-      <p class="text-[12px] text-white mt-1">
-        Execution and delivery planning
-      </p>
-    </div>
-
-    <div class="w-[48%] lg:w-[175px] h-[98px] bg-[#2B4189] p-4 rounded flex flex-col justify-start">
-      <img src="images/image-6.png" class="w-8 h-8 mb-2" />
-      <p class="text-[13px] text-white font-medium">
-        Reduced Labour Dependency
-      </p>
-    </div>
-  </div>
-
-     </div>
-
-         </div>
-
-   <div class="relative w-full max-w-4xl mx-auto">
-  
-  <img
-    src="images/form-bg.png"
-    alt="form background image"
-    class="w-full h-auto rounded-lg shadow-lg"
-  />
-
-  <div class="absolute top-10 left-1/2 -translate-x-1/2 w-full max-w-[480px] z-10 px-4">
     
-    <div class="bg-[#CCD54D] text-center py-6 px-6 shadow-md mx-auto w-[103%]">
-      <h2 class="text-[#263D8D] font-black text-2xl leading-tight">
-        START SAVING<br />ON YOUR NEXT PROJECT
-      </h2>
-    </div>
+  <section 
+  class="relative overflow-hidden "
+  style="
+    background:  url('images/hero-bg.png');
+    background-size: cover;
+    background-position: center 300%;
+    background-repeat: no-repeat;
+  
+  "
+>
 
-    <div 
-    class="bg-white p-4 shadow-xl -mt-2 ml-4 scroll-mt-32"
-    id="contactFormSection"
-    >
-      <div class="mb-5">
-        <h3 class="text-[#263D8D] font-bold text-base">Get a callback from a Proworks expert.</h3>
-        <p class="text-[#263D8D] text-sm opacity-90 w-80">Share your project details and we will help estimate the right fit.</p>
-        
-        <div class="flex flex-wrap gap-2 mt-3">
-          <span class="bg-[#EEEEEE] text-[#263D8D] text-[10px] px-2 py-1">No obligation consultation</span>
-          <span class="bg-[#EEEEEE] text-[#263D8D] text-[10px] px-2 py-1">Get customised solutions</span>
-          <span class="bg-[#EEEEEE] text-[#263D8D] text-[10px] px-2 py-1">Built for high-value projects</span>
+  <div class="relative max-w-7xl mx-auto px-6 py-12 lg:py-24 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center lg:mt-[-80px]">
+    
+    <div class="z-10">
+      <p class="text-[#CCD54D] text-[18px] md:text-[20px] font-bold mb-4">
+        PRECISION CUT & BEND REBAR
+      </p>
+
+      <div class="flex flex-wrap gap-2 md:gap-3 mb-3">
+        <span class="bg-[#5A6BAA] text-white text-[10px] md:text-xs px-2 py-2 rounded">
+          Fast quote turnaround
+        </span>
+        <span class="bg-[#5A6BAA] text-white text-[10px] md:text-xs px-2 py-2 rounded">
+          Centralised BBS support
+        </span>
+        <span class="bg-[#5A6BAA] text-white text-[10px] md:text-xs px-2 py-2 rounded">
+          Ready-to-site delivery
+        </span>
+      </div>
+
+      <h1 class="text-[#FFFFFF] text-3xl md:text-5xl font-bold leading-tight mb-6">
+        CUT COSTS,<br />
+        NOT CORNERS.
+      </h1>
+
+      <div class="relative">
+        <img src="images/section1-horizontal.png" class="w-full lg:w-[122%] max-w-none" />
+      </div>
+      
+      <br />
+      
+      <p class="text-[#FFFFFF] mb-8 max-w-[1080px] text-sm md:text-base leading-snug">
+        Precision cut & bend rebar solutions that reduce wastage, lower
+        labour costs, and keep your project on track.
+      </p>
+
+      <div class="flex flex-col gap-4 sm:flex-row lg:flex-row lg:gap-6">
+        <div class="flex gap-4 lg:flex-col">
+          <div class="w-[48%] sm:w-[150px] lg:w-[175px] h-[78px] bg-[#2B4189] p-4 rounded flex flex-col justify-center">
+            <h3 class="text-[18px] md:text-[20px] font-bold text-[#CCD54D]">10%</h3>
+            <p class="text-[10px] md:text-[12px] text-white mt-1">Potential cost savings</p>
+          </div>
+          <div class="w-[48%] sm:w-[150px] lg:w-[175px] h-[98px] bg-[#2B4189] p-4 rounded flex flex-col justify-start">
+            <img src="images/image-4.png" class="w-6 h-6 md:w-8 md:h-8 mb-3" />
+            <p class="text-[11px] md:text-[13px] text-white font-medium">
+              Cut Costs by up to 10%
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4 lg:flex-col">
+          <div class="w-[48%] sm:w-[150px] lg:w-[175px] h-[78px] bg-[#2B4189] p-4 rounded flex flex-col justify-center">
+            <h3 class="text-[18px] md:text-[20px] font-bold text-[#CCD54D]">15%</h3>
+            <p class="text-[10px] md:text-[12px] text-white mt-1">Lower material wastage</p>
+          </div>
+          <div class="w-[48%] sm:w-[150px] lg:w-[175px] h-[98px] bg-[#2B4189] p-4 rounded flex flex-col justify-start">
+            <img src="images/image-5.png" class="w-6 h-6 md:w-8 md:h-8 mb-3" />
+            <p class="text-[11px] md:text-[13px] text-white font-medium">
+              Lower Material Wastage by 15%
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4 lg:flex-col">
+          <div class="w-[48%] sm:w-[150px] lg:w-[175px] h-[78px] bg-[#2B4189] p-4 rounded flex flex-col justify-center">
+            <h3 class="text-[18px] md:text-[20px] font-bold text-[#CCD54D]">FASTER</h3>
+            <p class="text-[10px] md:text-[12px] text-white mt-1">
+              Execution and delivery planning
+            </p>
+          </div>
+          <div class="w-[48%] sm:w-[150px] lg:w-[175px] h-[98px] bg-[#2B4189] p-4 rounded flex flex-col justify-start">
+            <img src="images/image-6.png" class="w-6 h-6 md:w-8 md:h-8 mb-2" />
+            <p class="text-[11px] md:text-[13px] text-white font-medium">
+              Reduced Labour Dependency
+            </p>
+          </div>
         </div>
       </div>
-
-     <form id="contactForm" class="space-y-4 max-w-xl mx-auto">
-
-  <div class="grid grid-cols-2 gap-4">
-    <div class="flex flex-col">
-      <label class="text-[#263D8D] font-bold text-xs mb-1">Name:</label>
-      <input id="name" type="text" placeholder="Your name"
-        class="bg-[#EEEEEE] p-2 text-sm outline-none border border-transparent">
-      <p id="nameError" class="text-red-500 text-xs mt-1 hidden"></p>
     </div>
 
-    <div class="flex flex-col">
-      <label class="text-[#263D8D] font-bold text-xs mb-1">Company:</label>
-      <input id="company" type="text" placeholder="Company name"
-        class="bg-[#EEEEEE] p-2 text-sm outline-none border border-transparent">
-    </div>
-  </div>
+    <div class="relative w-full max-w-4xl mx-auto z-20">
+      <img src="images/form-bg.png" alt="form background image" class="hidden lg:block w-full h-auto rounded-lg shadow-lg" />
 
-  <div class="grid grid-cols-2 gap-4">
-    <div class="flex flex-col">
-      <label class="text-[#263D8D] font-bold text-xs mb-1">Phone:</label>
-      <input id="phone"
-       type="text"
-        placeholder="+91"
-        class="bg-[#EEEEEE] p-2 text-sm outline-none border border-transparent">
-      <p id="phoneError" class="text-red-500 text-xs mt-1 hidden"></p>
-    </div>
+      <div class="lg:absolute lg:top-10 lg:left-1/2 lg:-translate-x-1/2 w-full lg:max-w-[480px] px-0 lg:px-4">
+        
+        <div class="bg-[#CCD54D] text-center py-2 px-6 shadow-md mx-auto w-full lg:w-[103%]">
+          <h2 class="text-[#263D8D] font-black text-xl md:text-2xl leading-tight">
+            START SAVING<br />ON YOUR NEXT PROJECT
+          </h2>
+        </div>
 
-    <div class="flex flex-col">
-      <label class="text-[#263D8D] font-bold text-xs mb-1">Email:</label>
-      <input id="email" type="email" placeholder="Your email"
-        class="bg-[#EEEEEE] p-2 text-sm outline-none border border-transparent">
-      <p id="emailError" class="text-red-500 text-xs mt-1 hidden"></p>
-    </div>
-  </div>
+        <div class="bg-white p-4 md:p-6 shadow-xl lg:-mt-2 lg:ml-4 scroll-mt-32" id="contactFormSection">
+          <div class="mb-5">
+            <h3 class="text-[#263D8D] font-bold text-sm md:text-base">Get a callback from a Proworks expert.</h3>
+            <p class="text-[#263D8D] text-xs md:text-sm opacity-90 max-w-[320px]">Share your project details and we will help estimate the right fit.</p>
+            
+            <div class="flex flex-wrap gap-2 mt-3">
+              <span class="bg-[#EEEEEE] text-[#263D8D] text-[9px] md:text-[10px] px-2 py-1">No obligation consultation</span>
+              <span class="bg-[#EEEEEE] text-[#263D8D] text-[9px] md:text-[10px] px-2 py-1">Get customised solutions</span>
+              <span class="bg-[#EEEEEE] text-[#263D8D] text-[9px] md:text-[10px] px-2 py-1">Built for high-value projects</span>
+            </div>
+          </div>
 
-  <div class="flex flex-col">
-    <label class="text-[#263D8D] font-bold text-xs mb-1">Project Type:</label>
-    <input id="project" type="text"
-      placeholder="Residential/Commercial/Infra/Industrial"
-      class="bg-[#EEEEEE] p-2 text-sm outline-none border border-transparent">
-  </div>
+          <form id="contactForm" class="space-y-1 max-w-xl mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="flex flex-col">
+                <label class="text-[#263D8D] font-bold  mb-1">Name:</label>
+                <input id="name" type="text" placeholder="Your name" class="bg-[#EEEEEE] p-2 text-sm outline-none border border-transparent">
+                <p id="nameError" class="text-red-500 text-xs mt-1 hidden"></p>
+              </div>
+              <div class="flex flex-col">
+                <label class="text-[#263D8D] font-bold  mb-1">Company:</label>
+                <input id="company" type="text" placeholder="Company name" class="bg-[#EEEEEE] p-2 text-sm outline-none border border-transparent">
+              </div>
+            </div>
 
-  <div class="flex flex-col">
-    <label class="text-[#263D8D] font-bold text-xs mb-1">Message:</label>
-    <textarea id="message" rows="3"
-      placeholder="Tell us about your project"
-      class="bg-[#EEEEEE] p-2 text-sm outline-none border border-transparent resize-none"></textarea>
-  </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="flex flex-col">
+                <label class="text-[#263D8D] font-bold  mb-1">Phone:</label>
+                <input id="phone" type="text" placeholder="+91" class="bg-[#EEEEEE] p-2 text-sm outline-none border border-transparent">
+                <p id="phoneError" class="text-red-500 text-xs mt-1 hidden"></p>
+              </div>
+              <div class="flex flex-col">
+                <label class="text-[#263D8D] font-bold  mb-1">Email:</label>
+                <input id="email" type="email" placeholder="Your email" class="bg-[#EEEEEE] p-2 text-sm outline-none border border-transparent">
+                <p id="emailError" class="text-red-500 text-xs mt-1 hidden"></p>
+              </div>
+            </div>
 
-  <button type="submit"
-    class="w-full bg-[#263D8D] text-white font-bold py-3 text-sm tracking-widest hover:bg-[#1e2f6d] transition-all">
-    REQUEST A CALL BACK
-  </button>
+            <div class="flex flex-col">
+              <label class="text-[#263D8D] font-bold  mb-1">Project Type:</label>
+              <input id="project" type="text" placeholder="Residential/Commercial/Infra/Industrial" class="bg-[#EEEEEE] p-2 text-sm outline-none border border-transparent">
+            </div>
 
-</form>
+            <div class="flex flex-col">
+              <label class="text-[#263D8D] font-bold  mb-1">Message:</label>
+              <textarea id="message" rows="3" placeholder="Tell us about your project" class="bg-[#EEEEEE] p-2 text-sm outline-none border border-transparent resize-none"></textarea>
+            </div>
 
-      <div class="mt-6 pt-4 border-t border-[#263D8D]">
-        <p class="text-[#263D8D] text-[11px] font-medium text-center">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, iusto!.
-        </p>
+            <button type="submit" class="w-full bg-[#263D8D] text-white font-bold py-2   hover:bg-[#1e2f6d] transition-all ">
+              REQUEST A CALL BACK
+            </button>
+          </form>
+
+          <div class="mt-6 pt-4 border-t border-[#263D8D]">
+            <p class="text-[#263D8D] text-[10px] md:text-[11px] font-medium text-center">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, iusto!.
+            </p>
+          </div>
+        </div>
       </div>
-     
-      
     </div>
-     <div class=" mt-14">
-</div>
   </div>
-</div>
-    </section>
+</section>
 
     <!-- section 2 -->
-<section class="relative py-10 px-4 bg-white overflow-hidden">
+<section class="relative py-10 px-4 bg-white overflow-hidden min-h-[550px] -mt-[80px]">
   <div class="absolute inset-0 z-0 pointer-events-none">
     <img src="images/section2-bg.png" alt="" class="w-full h-full object-cover object-bottom opacity-90">
   </div>
 
   <div class="max-w-7xl mx-auto relative z-10">
-    <h2 class="text-3xl  font-bold text-center text-[#263D8D] mb-9 uppercase ">
+    <h2 class="text-3xl  font-bold text-center text-[#263D8D] mb-[60px] uppercase leading-tight">
       Where Projects Lose Money
     </h2>
 
@@ -263,7 +213,7 @@ body {
               <div class="w-full aspect-square overflow-hidden">
                 <img src="images/lose-money1.png" alt="Material wastage" class="w-full h-full object-cover">
               </div>
-              <div class="py-5 px-2 text-center bg-white">
+              <div class="py-2 px-1 text-center bg-white">
                 <p class="text-[#263D8D] font-semibold text-lg md:text-xl leading-tight">
                   Material wastage<br>from manual cutting
                 </p>
@@ -279,7 +229,7 @@ body {
               <div class="w-full aspect-square overflow-hidden">
                 <img src="images/lose-money2.png" alt="Labour dependency" class="w-full h-full object-cover">
               </div>
-              <div class="py-8 px-2 text-center bg-white">
+              <div class="py-2 px-1 text-center bg-white">
                 <p class="text-[#263D8D] font-semibold text-lg md:text-xl leading-tight">
                   High labour<br>dependency
                 </p>
@@ -294,7 +244,7 @@ body {
               <div class="w-full aspect-square overflow-hidden">
                 <img src="images/lose-money3.png" alt="Labour dependency" class="w-full h-full object-cover">
               </div>
-              <div class="py-8 px-2 text-center bg-white">
+              <div class="py-2 px-1 text-center bg-white">
                 <p class="text-[#263D8D] font-semibold text-lg md:text-xl leading-tight">
                   High labour<br>dependency
                 </p>
@@ -309,7 +259,7 @@ body {
               <div class="w-full aspect-square overflow-hidden">
                 <img src="images/lose-money4.png" alt="Inconsistent quality" class="w-full h-full object-cover">
               </div>
-              <div class="py-8 px-2 text-center bg-white">
+              <div class="py-2 px-1 text-center bg-white">
                 <p class="text-[#263D8D] font-semibold text-lg md:text-xl leading-tight">
                   Inconsistent<br>quality
                 </p>
@@ -319,15 +269,17 @@ body {
         </div>
 
       </div>
+      
     </div>
 
-    <div class="mt-28 text-center">
+   
+  </div>
+   <div class="text-center mt-[100px]">
       <p class="text-xl md:text-2xl text-[#263D8D]">
         <span class="text-[#263D8D] font-medium">Small inefficiencies.</span> 
         <span class="text-[#263D8D] font-medium">Big cost </span><br>overruns.</span>
       </p>
     </div>
-  </div>
 </section>
 
 
@@ -354,7 +306,7 @@ body {
 
   <div class="max-w-7xl mx-auto px-4 relative z-30">
     
-    <h2 class="text-center text-[#263D8D] text-3xl font-bold uppercase tracking-tight mb-20 px-4">
+    <h2 class="text-center text-[#263D8D] text-3xl font-bold uppercase leading-tight mb-20 px-4">
       TERRA 91 PROWORKS: SMART SOLUTIONS FOR CONSTRUCTION & MANUFACTURING
     </h2>
 
@@ -415,12 +367,12 @@ body {
 
 <!-- Section 4 -->
 <section class="relative py-24 px-4 bg-white overflow-hidden">
-  <div class="absolute inset-0 z-0 opacity-10">
-    <img src="images/section4-bg.png" alt="" class="w-full h-full object-cover">
+  <div class="absolute inset-0 z-0 opacity-80">
+    <img src="images/section4-bg.png" alt="bg image" class="w-full h-full object-cover">
   </div>
 
   <div class="max-w-7xl mx-auto relative z-10">
-    <h2 class="text-3xl  font-semibold text-center text-[#263D8D] uppercase mb-20">
+    <h2 class="text-3xl  font-bold text-center text-[#263D8D] uppercase mb-20 leading-tight">
       Why Choose Proworks
     </h2>
 
@@ -475,88 +427,66 @@ body {
 
 <!-- Section 5 -->
  
-     <section class="relative py-24 px-4 bg-white overflow-hidden">
-  
-  <div class="absolute inset-0 z-0 flex items-center justify-center pointer-events-none opacity-40">
-    <img src="images/section5-bg.png" alt="" class="w-full h-full object-cover">
-  </div>
-
-  <div class="max-w-7xl mx-auto w-full relative z-10 -mt-12">
-    <h2 class="text-3xl  font-bold text-center text-[#263D8D]  uppercase mb-9">
+    <section class="relative w-full py-12 overflow-hidden -mt-8">
+  <div class="text-center mb-8">
+    <h2 class="text-2xl md:text-3xl font-bold text-[#263D8D] uppercase leading-tight">
       Our Services
     </h2>
+  </div>
 
-    <div class="relative w-full">
-      
-      <div class="hidden lg:block absolute bottom-10 left-1/2 -translate-x-1/2 w-[90%] h-20 bg-white shadow-[0_10px_40px_rgba(0,0,0,0.1)] z-10 border border-gray-100 "></div>
-
-      <div class="relative z-20 flex flex-col lg:flex-row items-end justify-center w-full">
+  <div class="relative w-full max-w-7xl mx-auto px-4">
+    
+    <div class="hidden md:flex flex-col items-center">
+      <div class="relative w-full h-[300px] flex justify-center items-end">
+        <img src="images/section5-bg.png" alt="City Background" class="w-[900px] h-[300px] object-cover opacity-70">
         
-        
-
-        <div class="hidden lg:flex flex-col items-center justify-end h-64 w-40 relative pb-4">
-          <img src="images/left-location.png" alt="location" class="w-8 mb-5 relative z-30">
-          <svg class="absolute bottom-20 left-10 w-full h-10 pointer-events-none z-0 " viewBox="0 0 100 60" >
-            <path d="M0 60 L 100 0" fill="transparent" stroke="#000" stroke-width="1.5" stroke-dasharray="6" opacity="0.6"/>
-          </svg>
-        </div>
-
-
-        <div class="flex flex-col items-center w-full lg:w-[450px] relative z-30">
-          <div class="bg-white p-1 shadow-2xl border border-gray-100 mb-[-10px]">
-            <img src="images/cut.png" alt="Cut & Bend Rebars" class="w-full h-64 object-cover">
-
-          </div>
-          <div class="h-20 flex items-center justify-center w-full">
-             <p class="text-[#263D8D] font-bold text-xl mt-24">Cut & Bend Rebars</p>
+        <div class="absolute inset-0 flex items-end justify-center pointer-events-none pb-10">
+          <div class="relative w-full max-w-[1000px]">
+            <svg class="w-full h-auto" viewBox="0 0 800 200" fill="none">
+              <path d="M 0 180 Q 400 -50 800 180" stroke="black" stroke-width="1.5" stroke-dasharray="6 6" stroke-linecap="round" />
+            </svg>
+            <img src="images/left-location.png" class="absolute left-[-1%] bottom-[20%] w-8 h-10 transform -translate-x-1/2 translate-y-1/2" />
+            <img src="images/right-location.png" class="absolute right-[-1%] bottom-[20%] w-8 h-10 transform translate-x-1/2 translate-y-1/2" />
           </div>
         </div>
 
-        <div class="hidden lg:flex flex-col items-center justify-center h-64 w-64 relative px-4 pb-16">
-           <svg class="w-full h-12 absolute top-4" viewBox="0 0 200 40">
-             <path d="M0 40 Q 100 -10 200 40" fill="transparent" stroke="#000" stroke-width="1.5" stroke-dasharray="6" opacity="0.6"/>
-           </svg>
-           <img src="images/car.png" alt="Truck" class="w-36 object-contain mt-12">
+        <div class="absolute  left-1/2 transform -translate-x-1/2 w-32 lg:w-40">
+          <img src="images/car.png" alt="Truck" class="w-full h-auto">
         </div>
+      </div>
 
-        <div class="flex flex-col items-center w-full lg:w-[450px] relative z-30">
-          <div class="bg-white p-1 shadow-2xl border border-gray-100 mb-[-10px]">
-            <img src="images/centralised.png" alt="Centralised BBS Services" class="w-full h-64 object-cover">
-          </div>
-          <div class="h-20 flex items-center justify-center w-full ">
-            <p class="text-[#263D8D] font-bold text-xl text-center mt-24">Centralised BBS Services</p>
-          </div>
-        </div>
+      <div class="service-box relative w-[900px] h-8 bg-white shadow-lg -mt-15 z-10 mx-auto"></div>
 
-        <div class="hidden lg:flex flex-col items-center justify-end h-64 w-40 relative pb-4">
-          <img src="images/right-location.png" alt="location" class="w-8 mb-5  relative z-30">
-          <svg class="absolute bottom-20 right-10 w-full h-10 pointer-events-none z-0" viewBox="0 0 100 60">
-            <path d="M100 60 L 0 0" fill="transparent" stroke="#000" stroke-width="1.5" stroke-dasharray="6" opacity="0.4"/>
-          </svg>
-        </div>
-
+      <div class="relative w-[900px] flex justify-around mt-6 px-6 text-blue-900 font-medium z-10">
+        <p>Cut & Bend Rebars</p>
+        <p class="ml-10">Centralised BBS Services</p>
       </div>
     </div>
+
+    <div class="flex md:hidden flex-col items-center gap-8">
+      <div class="flex flex-col items-center">
+        <div class="w-[280px] h-[230px] bg-white rounded-lg shadow-lg overflow-hidden">
+           <img src="images/cut.png" class="w-full h-full object-cover">
+        </div>
+        <p class="mt-4 text-blue-900 font-medium text-base">Cut & Bend Rebars</p>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <div class="w-[280px] h-[230px] bg-white rounded-lg shadow-lg overflow-hidden">
+           <img src="images/centralised.png" class="w-full h-full object-cover">
+        </div>
+        <p class="mt-4 text-blue-900 font-medium text-base">Centralised BBS Services</p>
+      </div>
+    </div>
+
   </div>
-    </section> 
+</section>
  
 
-
-
-
-
-
-
-
-
-
-
-
-   
  
     <!-- section 6 -->
      
-  <section class="relative py-20 px-4 bg-white overflow-hidden min-h-[600px]">
+ <section class="relative py-12 md:py-20 px-4 bg-white overflow-hidden min-h-[600px] -mt-9">
   
   <div class="absolute inset-0 z-0 flex items-center justify-center pointer-events-none opacity-90">
     <img src="images/section6-bg.png" alt="Background image" class="w-full h-full object-cover">
@@ -565,8 +495,8 @@ body {
   <div class="max-w-7xl mx-auto relative z-10">
     
     <div class="flex justify-center mb-12">
-      <div class="bg-[#CCD54D] border-2 border-[#232323] px-8 py-2 shadow-sm">
-        <h2 class="text-[#232323] font-bold text-lg md:text-xl uppercase ">
+      <div class="bg-[#CCD54D] border-2 border-[#232323] px-6 md:px-8 py-2 shadow-sm">
+        <h2 class="text-[#232323] font-bold text-base md:text-xl uppercase text-center">
           Sample of Shapes Produced
         </h2>
       </div>
@@ -574,84 +504,83 @@ body {
 
     <div class="hidden lg:block relative w-full h-16">
       <div class="absolute top-0 left-[10%] right-[10%] h-[2px] bg-gray-800"></div>
-      
       <div class="absolute top-0 left-[10%] w-[2px] h-full bg-gray-800"></div>
-       <div class="absolute top-0 left-[30%] w-[2px] h-full bg-gray-800"></div>
-        <div class="absolute top-[-48px] left-1/2 -translate-x-1/2 w-[2px] h-[112px] bg-gray-800"></div> 
-        <div class="absolute top-0 right-[30%] w-[2px] h-full bg-gray-800"></div>
-         <div class="absolute top-0 right-[10%] w-[2px] h-full bg-gray-800"></div>
-     </div>
+      <div class="absolute top-0 left-[30%] w-[2px] h-full bg-gray-800"></div>
+      <div class="absolute top-[-48px] left-1/2 -translate-x-1/2 w-[2px] h-[112px] bg-gray-800"></div> 
+      <div class="absolute top-0 right-[30%] w-[2px] h-full bg-gray-800"></div>
+      <div class="absolute top-0 right-[10%] w-[2px] h-full bg-gray-800"></div>
+    </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-4 items-start">
+    <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-y-12 sm:gap-8 lg:gap-4 items-start">
       
       <div class="flex flex-col items-center">
-        <div class="w-full">
-          <img src="images/rectangle.png" alt="Rectangle" class="w-[200px] h-[200px] object-cover">
+        <div class="w-full flex justify-center">
+          <img src="images/rectangle.png" alt="Rectangle" class="w-[180px] h-[180px] md:w-[200px] md:h-[200px] object-cover">
         </div>
-        <p class="mt-4 text-[#263D8D] font-bold text-lg md:text-xl">Rectangle</p>
+        <p class="mt-4 text-[#263D8D] font-bold text-lg md:text-xl text-center">Rectangle</p>
       </div>
 
       <div class="flex flex-col items-center">
-        <div class="w-full">
-          <img src="images/spiral.png" alt="Spiral" class="w-[200px] h-[200px]  object-cover">
+        <div class="w-full flex justify-center">
+          <img src="images/spiral.png" alt="Spiral" class="w-[180px] h-[180px] md:w-[200px] md:h-[200px] object-cover">
         </div>
-        <p class="mt-4 text-[#263D8D] font-bold text-lg md:text-xl">Spiral</p>
+        <p class="mt-4 text-[#263D8D] font-bold text-lg md:text-xl text-center">Spiral</p>
       </div>
 
       <div class="flex flex-col items-center">
-        <div class="w-full">
-          <img src="images/radial.png" alt="Radial" class="w-[200px] h-[200px]  object-cover">
+        <div class="w-full flex justify-center">
+          <img src="images/radial.png" alt="Radial" class="w-[180px] h-[180px] md:w-[200px] md:h-[200px] object-cover">
         </div>
-        <p class="mt-4 text-[#263D8D] font-bold text-lg md:text-xl">Radial</p>
+        <p class="mt-4 text-[#263D8D] font-bold text-lg md:text-xl text-center">Radial</p>
       </div>
 
       <div class="flex flex-col items-center">
-        <div class="w-full">
-          <img src="images/spring_rebar.png" alt="Helical" class="w-[200px] h-[200px]  object-cover">
+        <div class="w-full flex justify-center">
+          <img src="images/spring_rebar.png" alt="Helical" class="w-[180px] h-[180px] md:w-[200px] md:h-[200px] object-cover">
         </div>
         <p class="mt-4 text-[#263D8D] font-bold text-lg md:text-xl text-center">Helical or Spring</p>
       </div>
 
       <div class="flex flex-col items-center">
-        <div class="w-full">
-          <img src="images/stirrups.png" alt="Stirrups" class="w-[200px] h-[200px]  object-cover">
+        <div class="w-full flex justify-center">
+          <img src="images/stirrups.png" alt="Stirrups" class="w-[180px] h-[180px] md:w-[200px] md:h-[200px] object-cover">
         </div>
-        <p class="mt-4 text-[#263D8D] font-bold text-lg md:text-xl">Stirrups</p>
+        <p class="mt-4 text-[#263D8D] font-bold text-lg md:text-xl text-center">Stirrups</p>
       </div>
 
     </div>
 
-    <div class="mt-20 text-center">
-      <p class="text-[#263D8D] font-bold text-lg md:text-xl">
+    <div class="mt-16 md:mt-20 text-center">
+      <p class="text-[#263D8D] font-bold text-base md:text-xl px-4">
         Everything you need, ready before it reaches your site.
       </p>
     </div>
 
   </div>
-  </section>
+</section>
 
 
 
 <!-- section 7 -->
-    <section class="relative py-5 px-4 bg-white overflow-hidden min-h-[500px]">
+    <section class="relative py-5 px-4 bg-white overflow-hidden min-h-[580px]">
   
   <div class="absolute inset-0 z-0 flex items-end justify-center pointer-events-none opacity-90">
-    <img src="images/section7-bg.png" alt="City Background" class="w-full h-auto object-cover object-bottom">
+    <img src="images/section7-bg.png" alt="City Background" class="w-full h-auto object-cover ">
   </div>
 
   <div class="max-w-7xl mx-auto relative z-10">
     
-    <h2 class="text-3xl md:text-4xl font-bold text-center text-[#263D8D] mb-16 uppercase ">
+    <h2 class="text-3xl md:text-4xl font-bold text-center text-[#263D8D] mb-16 leading-tight uppercase ">
       About
     </h2>
 
-    <div class="flex flex-col lg:flex-row items-center lg:items-start justify-center gap-12 lg:gap-0 relative">
+    <div class="flex flex-col lg:flex-row items-center lg:items-start justify-center gap-12 lg:gap-0 relative ">
       
       <div class="flex flex-col items-center text-center px-6 lg:w-1/2">
         <div class="mb-8 h-16 flex items-center">
           <img src="images/about-left.png" alt="TERRA91 Logo" class="w-[196px] h-[53px]">
         </div>
-        <p class="text-[#263D8D] text-lg font-semibold max-w-lg">
+        <p class="text-[#263D8D] text-lg font-semibold max-w-lg leading-tight">
           Terra91 is a global managed marketplace that simplifies sourcing of steel, base metals like aluminium and zinc, and petrochemicals. By connecting businesses with verified suppliers and managing procurement, logistics, and pricing end-to-end, it enables faster, more reliable, and cost-efficient operations across industries.
         </p>
       </div>
@@ -665,7 +594,7 @@ body {
         <div class="mb-8 h-16 flex items-center">
           <img src="images/about-right.png" alt="ZETWERK Logo" class="w-[196px] h-[53px]">
         </div>
-        <p class="text-[#020B36] text-lg font-semibold max-w-lg">
+        <p class="text-[#020B36] text-lg font-semibold max-w-lg leading-tight">
           Zetwerk is a global manufacturing platform that connects businesses with a wide supplier network to deliver products at scale, managing sourcing, production, and logistics for faster, cost-efficient, and reliable execution.
         </p>
       </div>
