@@ -74,6 +74,9 @@ body {
   -webkit-text-stroke: 1px black;
 }
 
+
+
+
 /* DESKTOP VIEW */
 @media (min-width: 768px) {
   .service-box::before {
@@ -118,3 +121,5 @@ body {
     background-image: url("../images/centralised.png");
   }
 }
+
+
