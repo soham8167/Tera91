@@ -1,19 +1,12 @@
-
-html {
-  scroll-behavior: smooth;
+* {
+  margin: 0;
+  padding: 0;
 }
-body {
-  font-family: "Gilroy";
-}
-
 @font-face {
   font-family: "Gilroy";
-  src: url("../fonts/Gilroy-Bold.eot");
   src:
-    url("../fonts/Gilroy-Bold.eot?#iefix") format("embedded-opentype"),
     url("../fonts/Gilroy-Bold.woff2") format("woff2"),
-    url("../fonts/Gilroy-Bold.woff") format("woff"),
-    url("../fonts/Gilroy-Bold.ttf") format("truetype");
+    url("../fonts/Gilroy-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -21,15 +14,30 @@ body {
 
 @font-face {
   font-family: "Gilroy";
-  src: url("../fonts/Gilroy-Heavy.eot");
   src:
-    url("../fonts/Gilroy-Heavy.eot?#iefix") format("embedded-opentype"),
     url("../fonts/Gilroy-Heavy.woff2") format("woff2"),
-    url("../fonts/Gilroy-Heavy.woff") format("woff"),
-    url("../fonts/Gilroy-Heavy.ttf") format("truetype");
+    url("../fonts/Gilroy-Heavy.woff") format("woff");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src:
+    url("../fonts/Gilroy-Regular.woff2") format("woff2"),
+    url("../fonts/Gilroy-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Gilroy";
+  font-weight: normal;
 }
 
 .gilroy-heavy {
@@ -40,8 +48,12 @@ body {
   font-family: "Gilroy";
   font-weight: bold;
 }
+.gilroy-regular {
+  font-family: "Gilroy";
+  font-weight: normal;
+}
 
- /* BASE DESKTOP STYLES (Keep your logic) */
+/* BASE DESKTOP STYLES (Keep your logic) */
 .service-box {
   position: relative;
 }
@@ -56,6 +68,10 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.text-stroke {
+  -webkit-text-stroke: 1px black;
 }
 
 /* DESKTOP VIEW */
@@ -80,7 +96,7 @@ body {
 /* MOBILE VIEW */
 @media (max-width: 767px) {
   .service-box {
-    background: transparent !important; 
+    background: transparent !important;
     box-shadow: none !important;
   }
 
