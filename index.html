@@ -12,7 +12,7 @@
   <body>
     <header class="w-full bg-[#263D8D] ">
       <div
-        class=" py-5 flex justify-around items-center"
+        class=" py-5 flex justify-between px-9 md:px-[80px] items-center"
       >
         <img
           src="images/logo.png"
@@ -60,7 +60,7 @@
 
         
 
-         <div class="block lg:hidden w-full">
+         <div class="block lg:hidden w-full" id="contactForm">
         <div class="relative w-full max-w-[480px] mx-auto ">
           <img src="images/form-bg.png" alt="form background" class="hidden lg:block absolute -inset-14 w-[140%] h-[115%] max-w-none -z-10 object-fill rounded-lg shadow-2xl" />
           
@@ -70,7 +70,7 @@
             </h2>
           </div>
 
-          <div class="bg-white p-6 shadow-2xl mx-auto w-[92%]" id=contactFormSection>
+          <div class="bg-white p-6 shadow-2xl mx-auto w-[92%]" id=contactFormSectionMobile>
             <div class="mb-4">
               <div class="flex flex-col gap-2">
                 <h3 class="text-[#263D8D] font-bold text-[18px] leading-[1]">Get a callback from a Proworks expert.</h3>
@@ -84,12 +84,12 @@
               </div>
             </div>
 
-            <form id="contactForm" class="space-y-4">
+            <form  class="contactForm space-y-4" >
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
                 <div class="flex flex-col">
                   <label class="text-[#263D8D] font-bold text-sm mb-1">Name:</label>
-                  <input id="name" type="text" placeholder="Your name" class="bg-[#EEEEEE] p-1 text-sm outline-none border border-transparent focus:border-[#263D8D]">
-                  <p id="nameError" class="text-red-500 text-xs mt-1 hidden"></p>
+                  <input  type="text" placeholder="Your name" class="name bg-[#EEEEEE] p-1 text-sm outline-none border border-transparent focus:border-[#263D8D]">
+                  <p  class="nameError text-red-500 text-xs mt-1 hidden"></p>
                 </div>
                 <div class="flex flex-col">
                   <label class="text-[#263D8D] font-bold text-sm mb-1">Company:</label>
@@ -100,13 +100,13 @@
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div class="flex flex-col">
                   <label class="text-[#263D8D] font-bold text-sm mb-1">Phone:</label>
-                  <input id="phone" type="text" placeholder="+91" class="bg-[#EEEEEE] p-1 text-sm outline-none border border-transparent focus:border-[#263D8D]">
-                  <p id="phoneError" class="text-red-500 text-xs mt-1 hidden"></p>
+                  <input  type="text" placeholder="+91" class="phone bg-[#EEEEEE] p-1 text-sm outline-none border border-transparent focus:border-[#263D8D]">
+                  <p  class="phoneError text-red-500 text-xs mt-1 hidden"></p>
                 </div>
                 <div class="flex flex-col">
                   <label class="text-[#263D8D] font-bold text-sm mb-1">Email:</label>
-                  <input id="email" type="email" placeholder="Your email" class="bg-[#EEEEEE] p-1 text-sm outline-none border border-transparent focus:border-[#263D8D]">
-                  <p id="emailError" class="text-red-500 text-xs mt-1 hidden"></p>
+                  <input  type="email" placeholder="Your email" class="email bg-[#EEEEEE] p-1 text-sm outline-none border border-transparent focus:border-[#263D8D]">
+                  <p  class="emailError text-red-500 text-xs mt-1 hidden"></p>
                 </div>
               </div>
 
@@ -127,7 +127,7 @@
 
             <div class="mt-4 pt-2 border-t border-[#263D8D]">
               <p class="text-[#263D8D] text-xs font-medium text-center">
-                Best for procurement teams, project managers, contractors and structural consultants.
+               Best for procurement teams, project heads, contractors and structural consultants.
               </p>
             </div>
           </div>
@@ -187,7 +187,7 @@
 </div>
       </div>
 
-      <div class="hidden lg:flex relative z-20 order-2 lg:col-span-5 justify-end">
+      <div class="hidden lg:flex relative z-20 order-2 lg:col-span-5 justify-end" id="contactForm">
         <div class="relative w-full max-w-[480px]">
           <img src="images/form-bg.png" alt="form background" class="hidden lg:block absolute -inset-14 w-[140%] h-[115%] max-w-none -z-10 object-fill rounded-lg shadow-2xl" />
           
@@ -197,7 +197,7 @@
             </h2>
           </div>
 
-          <div class="bg-white p-6 shadow-2xl mx-auto w-[92%]" id=contactFormSection>
+          <div class="bg-white p-6 shadow-2xl mx-auto w-[92%]" id=contactFormSectionDesktop>
             <div class="mb-5">
               <h3 class="text-[#263D8D] font-bold text-[20px]">Get a callback from a Proworks expert.</h3>
               <p class="text-[#263D8D] text-[17px] leading-[1.2]">Share your project details and we will help estimate the right fit.</p>
@@ -209,12 +209,12 @@
               </div>
             </div>
 
-            <form id="contactForm" class="space-y-4">
+            <form  class="space-y-4 contactForm">
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div class="flex flex-col">
                   <label class="text-[#263D8D] font-bold text-sm mb-1">Name:</label>
-                  <input id="name" type="text" placeholder="Your name" class="bg-[#EEEEEE] p-2 text-sm outline-none border border-transparent focus:border-[#263D8D]">
-                  <p id="nameError" class="text-red-500 text-xs mt-1 hidden"></p>
+                  <input type="text" placeholder="Your name" class="name bg-[#EEEEEE] p-2 text-sm outline-none border border-transparent focus:border-[#263D8D]">
+                  <p  class="nameError text-red-500 text-xs mt-1 hidden"></p>
                 </div>
                 <div class="flex flex-col">
                   <label class="text-[#263D8D] font-bold text-sm mb-1">Company:</label>
@@ -225,13 +225,13 @@
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div class="flex flex-col">
                   <label class="text-[#263D8D] font-bold text-sm mb-1">Phone:</label>
-                  <input id="phone" type="text" placeholder="+91" class="bg-[#EEEEEE] p-2 text-sm outline-none border border-transparent focus:border-[#263D8D]">
-                  <p id="phoneError" class="text-red-500 text-xs mt-1 hidden"></p>
+                  <input  type="text" placeholder="+91" class="phone bg-[#EEEEEE] p-2 text-sm outline-none border border-transparent focus:border-[#263D8D]">
+                  <p  class="phoneError text-red-500 text-xs mt-1 hidden"></p>
                 </div>
                 <div class="flex flex-col">
                   <label class="text-[#263D8D] font-bold text-sm mb-1">Email:</label>
-                  <input id="email" type="email" placeholder="Your email" class="bg-[#EEEEEE] p-2 text-sm outline-none border border-transparent focus:border-[#263D8D]">
-                  <p id="emailError" class="text-red-500 text-xs mt-1 hidden"></p>
+                  <input  type="email" placeholder="Your email" class="email bg-[#EEEEEE] p-2 text-sm outline-none border border-transparent focus:border-[#263D8D]">
+                  <p  class="emailError text-red-500 text-xs mt-1 hidden"></p>
                 </div>
               </div>
 
@@ -252,7 +252,7 @@
 
             <div class="mt-6 pt-4 border-t border-gray-200">
               <p class="text-[#263D8D] text-xs font-medium text-center">
-                Best for procurement teams, project managers, contractors and structural consultants.
+                Best for procurement teams, project heads, contractors and structural consultants.
               </p>
             </div>
           </div>
@@ -270,7 +270,7 @@
   </div>
 
   <div class="max-w-7xl mx-auto relative z-10">
-    <h2 class="text-3xl  font-bold text-center text-[#263D8D] mb-[60px] uppercase leading-tight">
+    <h2 class="text-3xl  font-bold text-center text-[#263D8D] mb-[50px] uppercase leading-tight">
       Where Projects Lose Money
     </h2>
 
@@ -379,7 +379,7 @@
 
   <div class="max-w-7xl mx-auto px-4 relative z-30">
     
-    <h2 class="text-center text-[#263D8D] text-3xl font-bold uppercase leading-tight mb-20 px-4">
+    <h2 class="text-center text-[#263D8D] text-3xl font-bold uppercase leading-tight mb-10 px-4">
       TERRA 91 PROWORKS: SMART SOLUTIONS FOR CONSTRUCTION & MANUFACTURING
     </h2>
 
@@ -391,7 +391,7 @@
         <img src="images/drawing.png" alt="Drawings" class="w-full h-full object-cover">
       </div>
     </div>
-    <p class="mt-8 text-[#263D8D] font-bold text-lg">Drawings</p>
+    <p class="mt-4 text-[#263D8D] font-bold text-lg">Drawings</p>
   </div>
 
   <div class="hidden lg:flex items-center w-24 relative">
@@ -407,7 +407,7 @@
         <img src="images/processing.png" alt="Processing" class="w-full h-full object-cover">
       </div>
     </div>
-    <p class="mt-8 text-[#263D8D] font-bold text-lg">Processing</p>
+    <p class="mt-4 text-[#263D8D] font-bold text-lg">Processing</p>
   </div>
 
   <div class="hidden lg:flex items-center w-24 relative">
@@ -423,12 +423,12 @@
         <img src="images/redaytouse.png" alt="Ready-to-use Delivery" class="w-full h-full object-cover">
       </div>
     </div>
-    <p class="mt-8 text-[#263D8D] font-bold text-lg">Ready-to-use Delivery</p>
+    <p class="mt-4 text-[#263D8D] font-bold text-lg">Ready-to-use Delivery</p>
   </div>
 
 </div>
 
-    <div class="max-w-3xl mx-auto text-center mt-12 pb-20">
+    <div class="max-w-3xl mx-auto text-center mt-12 pb-10">
       <p class="text-[#263D8D] font-bold text-lg md:text-xl leading-relaxed">
         Terra91 Proworks delivers ready-to-use cut and bent steel, processed exactly 
         as per your drawings. No rework. No delays. No unnecessary loss.
@@ -439,13 +439,13 @@
 </section>
 
 <!-- Section 4 -->
-<section class="relative py-24 px-4 bg-white overflow-hidden">
+<section class="relative py-10 px-4 bg-white overflow-hidden">
   <div class="absolute inset-0 z-0 opacity-80">
     <img src="images/section4-bg.png" alt="bg image" class="w-full h-full object-cover">
   </div>
 
   <div class="max-w-7xl mx-auto relative z-10">
-    <h2 class="text-3xl  font-bold text-center text-[#263D8D] uppercase mb-20 leading-tight">
+    <h2 class="text-3xl  font-bold text-center text-[#263D8D] uppercase mb-10 leading-tight">
       Why Choose Proworks
     </h2>
 
@@ -492,7 +492,7 @@
 
     </div>
 
-    <p class="text-[#263D8D] text-[13px] md:text-sm text-center mt-20 font-medium max-w-4xl mx-auto ">
+    <p class="text-[#263D8D] text-[13px] md:text-sm text-center mt-10 font-medium max-w-4xl mx-auto ">
       *Actual savings may vary depending on project size, design complexity, and Bar Bending Schedule (BBS).
     </p>
   </div>
@@ -500,7 +500,7 @@
 
 <!-- Section 5 -->
  
-    <section class="relative w-full py-12 overflow-hidden -mt-8">
+    <section class="relative w-full py-4 overflow-hidden ">
   <div class="text-center mb-8">
     <h2 class="text-2xl md:text-3xl font-bold text-[#263D8D] uppercase leading-tight">
       Our Services
@@ -509,9 +509,13 @@
 
   <div class="relative w-full max-w-7xl mx-auto px-4">
     <div class="hidden md:flex flex-col items-center">
-      <div class="relative w-full h-[300px] flex justify-center items-end ">
+      <div class="relative w-full h-[300px] flex justify-center items-end">
         
-    <img src="images/section5-bg.png" alt="City Background" class="w-full max-w-[900px] h-auto object-cover opacity-70">
+        <div class="absolute inset-0 flex pointer-events-none z-0">
+          <img src="images/section5-bg.png" class="w-1/3 h-full object-cover opacity-90">
+          <img src="images/section5-bg.png" class="w-1/3 h-full object-cover opacity-90">
+          <img src="images/section5-bg.png" class="w-1/3 h-full object-cover opacity-90">
+        </div>
         
         <div class="absolute inset-0 flex items-end justify-center pointer-events-none pb-10">
           <div class="relative w-full max-w-[1000px]">
@@ -523,14 +527,14 @@
           </div>
         </div>
 
-        <div class="absolute  left-1/2 transform -translate-x-1/2 w-32 lg:w-40">
+        <div class="absolute left-1/2 transform -translate-x-1/2 w-32 lg:w-40">
           <img src="images/car.png" alt="Truck" class="w-full h-auto">
         </div>
       </div>
 
       <div class="service-box relative w-[900px] h-8 bg-white shadow-lg -mt-15 z-10 mx-auto"></div>
 
-      <div class="relative w-[900px] flex justify-around mt-6 px-6 text-blue-900 font-medium z-10">
+      <div class="relative w-[900px] flex justify-around mt-6 px-6 text-[#263D8D] font-bold z-10">
         <p>Cut & Bend Rebars</p>
         <p class="ml-10">Centralised BBS Services</p>
       </div>
@@ -541,14 +545,14 @@
         <div class="w-[280px] h-[230px] bg-white rounded-lg shadow-lg overflow-hidden">
            <img src="images/cut.png" class="w-full h-full object-cover">
         </div>
-        <p class="mt-4 text-blue-900 font-medium text-base">Cut & Bend Rebars</p>
+        <p class="mt-4 text-[#263D8D] font-medium text-base">Cut & Bend Rebars</p>
       </div>
 
       <div class="flex flex-col items-center">
         <div class="w-[280px] h-[230px] bg-white rounded-lg shadow-lg overflow-hidden">
            <img src="images/centralised.png" class="w-full h-full object-cover">
         </div>
-        <p class="mt-4 text-blue-900 font-medium text-base">Centralised BBS Services</p>
+        <p class="mt-4 text-[#263D8D] font-medium text-base">Centralised BBS Services</p>
       </div>
     </div>
 
@@ -702,19 +706,19 @@
       </p>
 
       <div class="flex flex-col sm:flex-row gap-4 items-start">
-         <a href="#contactFormSection">
+        <a href="#" id="scrollBtn">
         <button class="group flex items-center gap-3 bg-[#CCD54D] hover:bg-[#c1d145] text-[#263D8D] font-bold px-4 py-3 rounded-md transition-all">
           <img src="images/section8-icon1.svg" alt="icon1" class="w-5 h-5">
           <span class="uppercase text-sm ">Download Brochure</span>
         </button>
 </a>
- <a href="#contactFormSection">
+ <a href="#" id="scrollBtn">
         <button class="group flex items-center gap-3 bg-[#CCD54D] hover:bg-[#c1d145] text-[#263D8D] font-bold px-12 py-3 rounded-md transition-all">
           <img src="images/section8-icon2.svg" alt="icon2" class="w-5 h-5">
           <span class="uppercase text-sm ">Get in touch</span>
         </button>
         </a>
-      </div>
+      </div>  
     </div>
   </div>
 </section>
@@ -774,7 +778,7 @@
 <!-- fixed button -->
 
 <div class="fixed right-4 bottom-4 z-[999]">
-  <a href="#contactFormSection">
+  <a href="#" id="scrollBtn">
     <button class="w-[60px] lg:w-[240px] h-[60px] lg:h-auto flex items-center justify-center lg:justify-start lg:gap-5 bg-[#263D8D] text-[#CCD54D] font-bold py-4 px-0 lg:px-6 rounded-full shadow-lg transition-all">
       
       <img src="images/arrow.png" class="w-3 h-4" />
