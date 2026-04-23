@@ -41,7 +41,6 @@ forms.forEach((form) => {
     input.classList.remove("border", "border-red-500");
   }
 
-  // Name validation
   name.addEventListener("input", () => {
     name.value = name.value.replace(/[0-9]/g, "");
 
@@ -76,7 +75,7 @@ forms.forEach((form) => {
     }
   });
 
-  // Submit validation
+  // Submit 
   form.addEventListener("submit", function (e) {
     e.preventDefault();
 
