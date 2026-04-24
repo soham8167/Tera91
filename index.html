@@ -286,19 +286,19 @@
     </h2>
 
     <div class="relative">
-      <div class="hidden lg:block absolute top-[110px] left-3  w-full h-[1px] bg-gray-800 z-0"></div>
+      <div class="hidden lg:block absolute top-[110px]   w-full h-[1px] bg-gray-800 z-0"></div>
 
       <div class="grid grid-cols-1 gap-20 sm:grid-cols-2 lg:grid-cols-4  relative z-10"> 
         
         <div class="flex flex-col items-center ">
-          <div class="relative w-[250px] h-[220px] md:border md:border-gray-800 bg-transparent group">
+          <div class="relative w-[250px] h-[220px] border border-gray-800 bg-transparent group">
             
             <div class="absolute left-1/2 -translate-x-1/2 -top-6 w-[230px] bg-white shadow-[0_20px_40px_rgba(0,0,0,0.12)] p-3.5 group-hover:scale-110 transition-all duration-300 ease-in-out">
               <div class="w-full aspect-square overflow-hidden">
                 <img src="images/lose-money1.png" alt="Material wastage" class="w-full h-full object-cover ">
               </div>
               <div class="py-2 px-1 text-center bg-white">
-                <p class="text-[#263D8D] font-semibold text-lg md:text-xl leading-tight">
+                <p class="text-[#263D8D] font-semibold text-[18px] leading-[1]">
                   Material wastage<br>from manual cutting
                 </p>
               </div>
@@ -308,13 +308,13 @@
         </div>
 
         <div class="flex flex-col items-center">
-          <div class="relative w-[250px] h-[220px] md:border md:border-gray-800 bg-transparent group">
+          <div class="relative w-[250px] h-[220px] border border-gray-800 bg-transparent group">
             <div class="absolute left-1/2 -translate-x-1/2 -top-6 w-[230px] bg-white shadow-[0_20px_40px_rgba(0,0,0,0.12)] p-2 group-hover:scale-110 transition-all duration-300 ease-in-out">
               <div class="w-full aspect-square overflow-hidden">
                 <img src="images/lose-money2.png" alt="Labour dependency" class="w-full h-full object-cover">
               </div>
               <div class="py-2 px-1 text-center bg-white">
-                <p class="text-[#263D8D] font-semibold text-lg md:text-xl leading-tight">
+                <p class="text-[#263D8D] font-semibold text-[18px] leading-[1]">
                   High labour<br>dependency
                 </p>
               </div>
@@ -323,13 +323,13 @@
         </div>
 
         <div class="flex flex-col items-center">
-          <div class="relative w-[250px] h-[220px] md:border md:border-gray-800 bg-transparent group">
+          <div class="relative w-[250px] h-[220px] border border-gray-800 bg-transparent group">
             <div class="absolute left-1/2 -translate-x-1/2 -top-6 w-[230px] bg-white shadow-[0_20px_40px_rgba(0,0,0,0.12)] p-2 group-hover:scale-110  transition-all duration-300 ease-in-out">
               <div class="w-full aspect-square overflow-hidden">
                 <img src="images/lose-money3.png" alt="Labour dependency" class="w-full h-full object-cover">
               </div>
               <div class="py-2 px-1 text-center bg-white">
-                <p class="text-[#263D8D] font-semibold text-lg md:text-xl leading-tight">
+                <p class="text-[#263D8D] font-semibold text-[18px] leading-[1]">
                   Delays due to </br> on-site processing
                 </p>
               </div>
@@ -338,13 +338,13 @@
         </div>
 
         <div class="flex flex-col items-center">
-          <div class="relative w-[250px] h-[220px] md:border md:border-gray-800 bg-transparent group">
+          <div class="relative w-[250px] h-[220px] border border-gray-800 bg-transparent group">
             <div class="absolute left-1/2 -translate-x-1/2 -top-6 w-[230px] bg-white shadow-[0_20px_40px_rgba(0,0,0,0.12)] p-2 group-hover:scale-110 transition-all duration-300 ease-in-out">
               <div class="w-full aspect-square overflow-hidden">
                 <img src="images/lose-money4.png" alt="Inconsistent quality" class="w-full h-full object-cover">
               </div>
               <div class="py-2 px-1 text-center bg-white">
-                <p class="text-[#263D8D] font-semibold text-lg md:text-xl leading-tight">
+                <p class="text-[#263D8D] font-semibold text-[18px] leading-[1]">
                   Inconsistent<br>quality
                 </p>
               </div>
@@ -786,18 +786,29 @@
 
 <!-- fixed button -->
 
-<div class="fixed right-4 bottom-4 z-[999]">
-  <a href="#" id="scrollBtn">
-    <button class="w-[60px] lg:w-[240px] h-[60px] lg:h-auto flex items-center justify-center lg:justify-start lg:gap-5 bg-[#263D8D] text-[#CCD54D] font-bold py-4 px-0 lg:px-6 rounded-full rounded-br-[0px] shadow-lg transition-all">
+<div class="fixed right-4 bottom-4 z-[999] group">
+  <a href="#" id="scrollBtn" class="flex items-center">
+    
+    <div class="flex items-center bg-[#263D8D] text-[#CCD54D] font-bold p-2 lg:p-3 rounded-full rounded-br-[0px] shadow-lg transition-all duration-500 ease-in-out w-[60px] h-[60px] lg:w-[200px] lg:hover:w-[450px] overflow-hidden">
       
-      <img src="images/arrow.png" class="w-3 h-4" />
+      <div class="flex items-center gap-5 px-4 min-w-[240px]">
+        <div class="relative w-4 h-4">
+            <img src="images/arrow.png" class="absolute inset-0 w-full h-full transition-opacity duration-300 group-hover:opacity-0" />
+            <img src="images/arrow.png" class="absolute inset-0 w-full h-full transition-opacity duration-300 opacity-0 group-hover:opacity-100 rotate-180" />
+        </div>
 
-      <span class="hidden lg:flex flex-col text-left leading-tight">
-        <span>Planning</span>
-        <span>A New Project</span>
-      </span>
+        <span class="hidden lg:flex flex-col text-left leading-tight uppercase text-sm">
+          <span>Planning</span>
+          <span>A New Project?</span>
+        </span>
+      </div>
 
-    </button>
+      <button class="hidden lg:flex items-center gap-3 bg-[#CCD54D] hover:bg-[#c1d145] text-[#263D8D] font-bold px-8 py-3 rounded-full transition-all duration-500 opacity-0 group-hover:opacity-100 whitespace-nowrap ">
+        <img src="images/section8-icon2.svg" alt="icon2" class="w-5 h-5">
+        <span class="uppercase text-sm">Get in touch</span>
+      </button>
+      
+    </div>
   </a>
 </div>
 
