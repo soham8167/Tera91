@@ -1,4 +1,12 @@
+window.addEventListener("load", () => {
+  AOS.init({
+    duration: 1000,
+    once: false, // animation runs once
+    offset: 100, // trigger a bit earlier
+  });
 
+  AOS.refresh();
+});
 // Select all forms
 const forms = document.querySelectorAll(".contactForm");
 
@@ -14,18 +22,18 @@ forms.forEach((form) => {
   const scrollBtn = document.getElementById("scrollBtn");
 
   scrollBtn.addEventListener("click", function (e) {
-  e.preventDefault();
+    e.preventDefault();
 
-  if (window.innerWidth >= 1024) {
-    document
-      .getElementById("contactFormSectionDesktop")
-      .scrollIntoView({ behavior: "smooth" });
-  } else {
-    document
-      .getElementById("contactFormSectionMobile")
-      .scrollIntoView({ behavior: "smooth" });
-  }
-});
+    if (window.innerWidth >= 1024) {
+      document
+        .getElementById("contactFormSectionDesktop")
+        .scrollIntoView({ behavior: "smooth" });
+    } else {
+      document
+        .getElementById("contactFormSectionMobile")
+        .scrollIntoView({ behavior: "smooth" });
+    }
+  });
 
   // Show error
   function showError(input, errorEl, message) {
@@ -75,7 +83,7 @@ forms.forEach((form) => {
     }
   });
 
-  // Submit 
+  // Submit
   form.addEventListener("submit", function (e) {
     e.preventDefault();
 
@@ -93,6 +101,12 @@ forms.forEach((form) => {
       showError(email, emailError, "Email is required");
       return;
     }
+
+    //  console.log({
+    //     name: name.value,
+    //     email: email.value,
+    //     phone: phone.value
+    //   });
 
     alert("Form submitted successfully!");
   });

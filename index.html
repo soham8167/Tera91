@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="css/stylesheet.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     
     <title>Terra91</title>
    
@@ -290,7 +291,7 @@
 
       <div class="grid grid-cols-1 gap-36 lg:gap-20 sm:grid-cols-2 lg:grid-cols-4  relative z-10"> 
         
-        <div class="flex flex-col items-center ">
+        <div class="flex flex-col items-center" data-aos="zoom-in">
           <div class="relative w-[250px] h-[220px] border border-gray-800 bg-transparent group">
             
             <div class="absolute left-1/2 -translate-x-1/2 -top-6 w-[230px] bg-white shadow-[0_20px_40px_rgba(0,0,0,0.12)] p-3.5 group-hover:scale-110 transition-all duration-300 ease-in-out">
@@ -307,7 +308,7 @@
           </div>
         </div>
 
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center" data-aos="zoom-in">
           <div class="relative w-[250px] h-[220px] border border-gray-800 bg-transparent group">
             <div class="absolute left-1/2 -translate-x-1/2 -top-6 w-[230px] bg-white shadow-[0_20px_40px_rgba(0,0,0,0.12)] p-2 group-hover:scale-110 transition-all duration-300 ease-in-out">
               <div class="w-full aspect-[4/4.4] overflow-hidden">
@@ -322,7 +323,7 @@
           </div>
         </div>
 
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center" data-aos="zoom-in">
           <div class="relative w-[250px] h-[220px] border border-gray-800 bg-transparent group">
             <div class="absolute left-1/2 -translate-x-1/2 -top-6 w-[230px] bg-white shadow-[0_20px_40px_rgba(0,0,0,0.12)] p-2 group-hover:scale-110  transition-all duration-300 ease-in-out">
               <div class="w-full aspect-[4/4.3] overflow-hidden">
@@ -337,7 +338,7 @@
           </div>
         </div>
 
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center" data-aos="zoom-in">
           <div class="relative w-[250px] h-[220px] border border-gray-800 bg-transparent group">
             <div class="absolute left-1/2 -translate-x-1/2 -top-6 w-[230px] bg-white shadow-[0_20px_40px_rgba(0,0,0,0.12)] p-2 group-hover:scale-110 transition-all duration-300 ease-in-out">
               <div class="w-full aspect-[4/4.4] overflow-hidden">
@@ -396,7 +397,7 @@
 
     <div class="flex flex-col lg:flex-row items-center justify-center lg:gap-6 mb-16">
   
-  <div class=" flex flex-col lg:items-center  ">
+  <div class=" flex flex-col lg:items-center " data-aos="zoom-in">
     <div class="relative w-[240px] h-[230px] bg-white shadow-lg flex items-center justify-center group">
       <div class="absolute w-[280px] h-[180px] z-10 shadow-md group-hover:scale-110 transition-all duration-300 ease-in-out">
         <img src="images/drawing.png" alt="Drawings" class="w-full h-full object-cover">
@@ -409,7 +410,7 @@
   <img src="images/terra91-arrow.svg">
 </div>
 
-  <div class="flex flex-col lg:items-center ">
+  <div class="flex flex-col lg:items-center" data-aos="zoom-in">
     <div class="relative w-[240px] h-[220px] bg-white shadow-lg flex items-center justify-center group">
       <div class="absolute w-[280px] h-[180px] z-10 shadow-md group-hover:scale-110 transition-all duration-300 ease-in-out">
         <img src="images/processing.png" alt="Processing" class="w-full h-full object-cover">
@@ -422,7 +423,7 @@
   <img src="images/terra91-arrow.svg">
 </div>
 
-  <div class="flex flex-col lg:items-center ">
+  <div class="flex flex-col lg:items-center" data-aos="zoom-in">
     <div class="relative w-[240px] h-[220px] bg-white shadow-lg flex items-center justify-center group">
       <div class="absolute w-[280px] h-[180px] z-10 shadow-md group-hover:scale-110 transition-all duration-300 ease-in-out">
         <img src="images/redaytouse.png" alt="Ready-to-use Delivery" class="w-full h-full object-cover">
@@ -433,7 +434,8 @@
 
 </div>
 
-    <div class="max-w-3xl mx-auto text-center mt-12 pb-10">
+    <div class="max-w-3xl mx-auto text-center mt-12 pb-10" data-aos="fade-up"
+     data-aos-duration="1000">
       <p class="text-[#263D8D] font-bold text-lg md:text-xl leading-relaxed">
         Terra91 Proworks delivers ready-to-use cut and bent steel, processed exactly 
         as per your drawings. No rework. No delays. No unnecessary loss.
@@ -456,7 +458,7 @@
       Why Choose Proworks
     </h2>
 
-    <div class="relative flex flex-wrap lg:flex-nowrap md:justify-between justify-center items-start gap-y-12 gap-x-4">
+    <div class="relative flex flex-wrap lg:flex-nowrap md:justify-between justify-center items-start gap-y-12 gap-x-4" data-aos="flip-up">
       
       <div class="hidden lg:block absolute top-[105px] left-0 w-full h-24 z-0">
         <img src="images/section4-horizontal.png" alt="connecting line" class="w-full h-full object-contain">
@@ -528,12 +530,14 @@
           <img src="images/our-service-group.svg">
         </div>
 
-        <div class="absolute left-1/2 transform -translate-x-1/2 w-32 lg:w-40">
+        <div class="absolute transform -translate-x-1/2 w-32 lg:w-40" data-aos="fade-down"
+     data-aos-offset="100"
+     data-aos-easing="ease-in-sine">
           <img src="images/car.png" alt="Truck" class="w-full h-auto">
         </div>
       </div>
 
-      <div class="service-box relative w-[920px] h-12 bg-white shadow-lg  z-10 mx-auto "></div>
+      <div class="service-box relative w-[920px] h-12 bg-white shadow-lg  z-10 mx-auto " data-aos="zoom-in"></div>
 
       <div class="relative w-[900px] flex justify-around mt-6 px-6 text-[#263D8D] font-bold z-10">
         <p>Cut & Bend Rebars</p>
@@ -541,10 +545,10 @@
       </div>
     </div>
 
-    <div class="flex md:hidden flex-col items-center gap-10 px-4 py-6">
+    <div class="flex md:hidden flex-col items-center gap-10 px-4 py-6" >
 
  
-  <div class="flex flex-col items-center w-full max-w-[320px]">
+  <div class="flex flex-col items-center w-full max-w-[320px]" data-aos="zoom-in">
     <div class="w-full h-[220px] bg-white rounded-xl shadow-lg overflow-hidden">
       <img src="images/cut.png" class="w-full h-full object-cover">
     </div>
@@ -554,7 +558,7 @@
   </div>
 
   
-  <div class="flex flex-col items-center w-full max-w-[320px]">
+  <div class="flex flex-col items-center w-full max-w-[320px]" data-aos="zoom-in">
     <div class="w-full h-[220px] bg-white rounded-xl shadow-lg overflow-hidden">
       <img src="images/centralised.png" class="w-full h-full object-cover">
     </div>
@@ -580,7 +584,7 @@
 
   <div class="max-w-7xl mx-auto relative z-10">
     
-    <div class="flex justify-center mb-12">
+    <div class="flex justify-center mb-12" data-aos="flip-up">
       <div class="bg-[#CCD54D] border-2 border-[#232323] px-6 md:px-8 py-2 shadow-sm">
         <h2 class="text-[#232323] font-bold text-base md:text-xl uppercase text-center">
           Sample of Shapes Produced
@@ -599,35 +603,35 @@
 
     <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-y-12 sm:gap-8 lg:gap-4 items-start">
       
-      <div class="flex flex-col items-center ">
+      <div class="flex flex-col items-center " data-aos="zoom-out-down">
         <div class="w-full flex justify-center group">
           <img src="images/rectangle.png" alt="Rectangle" class="w-[160px] h-[180px] md:w-[200px] md:h-[200px] object-cover group-hover:scale-110 transition-all duration-300 ease-in-out">
         </div>
         <p class="mt-4 text-[#263D8D] font-bold text-lg md:text-xl text-center">Rectangle</p>
       </div>
 
-      <div class="flex flex-col items-center ">
+      <div class="flex flex-col items-center " data-aos="zoom-out-down">
         <div class="w-full flex justify-center group">
           <img src="images/spiral.png" alt="Spiral" class="w-[160px] h-[180px] md:w-[200px] md:h-[200px] object-cover group-hover:scale-110 transition-all duration-300 ease-in-out">
         </div>
         <p class="mt-4 text-[#263D8D] font-bold text-lg md:text-xl text-center">Spiral</p>
       </div>
 
-      <div class="flex flex-col items-center ">
+      <div class="flex flex-col items-center " data-aos="zoom-out-down">
         <div class="w-full flex justify-center group">
           <img src="images/radial.png" alt="Radial" class="w-[160px] h-[180px] md:w-[200px] md:h-[200px] object-cover group-hover:scale-110 transition-all duration-300 ease-in-out">
         </div>
         <p class="mt-4 text-[#263D8D] font-bold text-lg md:text-xl text-center">Radial</p>
       </div>
 
-      <div class="flex flex-col items-center ">
+      <div class="flex flex-col items-center " data-aos="zoom-out-down">
         <div class="w-full flex justify-center group">
           <img src="images/spring_rebar.png" alt="Helical" class="w-[160px] h-[180px] md:w-[200px] md:h-[200px] object-cover group-hover:scale-110 transition-all duration-300 ease-in-out">
         </div>
         <p class="mt-4 text-[#263D8D] font-bold text-lg md:text-xl text-center">Helical or Spring</p>
       </div>
 
-      <div class="flex flex-col items-center col-span-2 sm:col-span-1 ">
+      <div class="flex flex-col items-center col-span-2 sm:col-span-1 " data-aos="zoom-out-down">
   <div class="w-full flex justify-center group ">
     <img src="images/stirrups.png" alt="Stirrups" class="w-[180px] h-[160px] md:w-[200px] md:h-[200px] object-cover group-hover:scale-110 transition-all duration-300 ease-in-out">
   </div>
@@ -668,7 +672,7 @@
         <div class="mb-8 h-16 flex items-center">
           <img src="images/about-left.png" alt="TERRA91 Logo" class="w-[196px] h-[53px]">
         </div>
-        <p class="text-[#263D8D] text-lg font-semibold max-w-lg leading-tight">
+        <p class="text-[#263D8D] text-lg font-semibold max-w-lg leading-tight" data-aos="zoom-in-up">
           Terra91 is a global managed marketplace that simplifies sourcing of steel, base metals like aluminium and zinc, and petrochemicals. By connecting businesses with verified suppliers and managing procurement, logistics, and pricing end-to-end, it enables faster, more reliable, and cost-efficient operations across industries.
         </p>
       </div>
@@ -682,7 +686,7 @@
         <div class="mb-8 h-16 flex items-center">
           <img src="images/about-right.png" alt="ZETWERK Logo" class="w-[196px] h-[53px]">
         </div>
-        <p class="text-[#020B36] text-lg font-semibold max-w-lg leading-tight">
+        <p class="text-[#020B36] text-lg font-semibold max-w-lg leading-tight" data-aos="zoom-in-up">
           Zetwerk is a global manufacturing platform that connects businesses with a wide supplier network to deliver products at scale, managing sourcing, production, and logistics for faster, cost-efficient, and reliable execution.
         </p>
       </div>
@@ -699,7 +703,7 @@
     <div class="absolute inset-0 bg-[#253D90]/85"></div>
   </div>
 
-  <div class="relative z-10 max-w-7xl mx-auto px-6 py-16 lg:py-0 w-full">
+  <div class="relative z-10 max-w-7xl mx-auto px-6 py-16 lg:py-0 w-full" data-aos="zoom-in-up">
     <div class="max-w-3xl">
       <h3 class="text-[#CCD54D] font-extrabold uppercase  text-sm md:text-lg mb-2">
         High-performance rebar workflows
@@ -813,7 +817,7 @@
 </div>
 
   
-
+     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script src="script.js"></script> 
   </body>
 </html>
