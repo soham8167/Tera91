@@ -120,3 +120,50 @@ body {
 }
 
 
+
+
+
+
+
+
+/* 1. Ensure the card is the reference point */
+.card {
+    position: relative;
+    /* Remove 'overflow-hidden' if you have it on .card, 
+       otherwise the arrow will be cut off */
+}
+
+/* 2. The Arrow Logic */
+.card:not(:last-child)::after {
+    content: "";
+    display: block; /* Safety: ensures the element renders */
+    position: absolute;
+    background-image: url('images/terra91-arrow.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 100; /* High enough to beat the z-30 container */
+    pointer-events: none;
+}
+
+/* 3. Mobile: Arrow pointing DOWN */
+@media (max-width: 1023px) {
+    .card:not(:last-child)::after {
+        bottom: -70px; /* Space between card text and next card */
+        left: 50%;
+        width: 40px;
+        height: 40px;
+        transform: translateX(-50%) rotate(90deg); /* Points it down */
+    }
+}
+
+/* 4. Desktop: Arrow pointing RIGHT */
+@media (min-width: 1024px) {
+    .card:not(:last-child)::after {
+        right: -50px; /* Centers it between the gaps */
+        top: 35%; /* Aligns with the middle of the white card */
+        width: 60px;
+        height: 60px;
+        transform: translateY(-50%);
+    }
+}
