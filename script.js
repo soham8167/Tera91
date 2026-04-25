@@ -7,6 +7,7 @@ window.addEventListener("load", () => {
 
   AOS.refresh();
 });
+
 // Select all forms
 const forms = document.querySelectorAll(".contactForm");
 
@@ -110,4 +111,38 @@ forms.forEach((form) => {
 
     alert("Form submitted successfully!");
   });
+});
+
+
+
+
+// add new code 
+
+const mobileSection = document.getElementById("mobilebutton"); //for mobile
+const desktopSection = document.getElementById("desktopbutton"); //for desktop
+const floatingBtn = document.getElementById("floatingBtn");
+
+window.addEventListener("scroll", () => {
+  let shouldShow = false;
+
+  
+  if (window.innerWidth < 1024 && mobileSection) {
+    const rect = mobileSection.getBoundingClientRect();
+    if (rect.bottom < 0) shouldShow = true;
+  }
+
+  // desktop
+  else if (window.innerWidth >= 1024 && desktopSection) {
+    const rect = desktopSection.getBoundingClientRect();
+    if (rect.bottom < 0) shouldShow = true;
+  }
+
+  // Smooth animation instead of hidden
+  if (shouldShow) {
+    floatingBtn.classList.remove("opacity-0", "translate-y-10", "pointer-events-none");
+    floatingBtn.classList.add("opacity-100", "translate-y-0");
+  } else {
+    floatingBtn.classList.add("opacity-0", "translate-y-10", "pointer-events-none");
+    floatingBtn.classList.remove("opacity-100", "translate-y-0");
+  }
 });
